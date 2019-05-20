@@ -5,23 +5,38 @@
         <meta charset="utf-8">
     </head>
     <body>
-        <h1>Variables en javascript </h1>
+        <h1>Chapitre 7 : Types de valeurs </h1>
         <script>
-            var x = 25 ;
-            x = x + 5;
-            var X = 100;
+            // number
+            var x = 25;
+            var y = -75;
+            // point au lieu de virgule
+            var z = 3.14;
 
-            var prenom = "Eric", nom="", dpt = "75";
+            // string
+            var prenom = "Eric";
+            var dpt = "Je vis dans le \"75\"";
+            var dpt2 = "Je vis dans le '75'";
+            var ville = 'J\'habite à Paris';
+            var ville2 = "J'habite à Paris";
 
-            // non conseillé
-            var age;
-            age = 27;
+            // boolean
+            var a = true, b = false;
 
-            // conseillé
-            var ville = "";
-            ville = "Paris";
+            var n = null;
+            var u = undefined;
 
-            var homme = true;
+            // not a number
+            var nn = NaN;
+
+            x = "quatre";
+
+            alert("Variable x :" + typeof(x) +
+                "\nVariable y :" + typeof(y) +
+                "\nVariable a :" + typeof(a) +
+                "\nVariable n :" + typeof(n) +
+                "\nVariable u :" + typeof(u) +
+                "\nVariable nn :" + typeof(nn));
 
         </script>
         <script src="script.js"></script>
