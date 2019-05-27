@@ -5,38 +5,33 @@
         <meta charset="utf-8">
     </head>
     <body>
-        <h1>Chapitre 7 : Types de valeurs </h1>
+        <h1>Chapitre 21 : Objets </h1>
         <script>
-            // number
-            var x = 25;
-            var y = -75;
-            // point au lieu de virgule
-            var z = 3.14;
+            var obj_string = new String("Je suis un objet");
+            var obj_creer = new Object();
 
-            // string
-            var prenom = "Eric";
-            var dpt = "Je vis dans le \"75\"";
-            var dpt2 = "Je vis dans le '75'";
-            var ville = 'J\'habite à Paris';
-            var ville2 = "J'habite à Paris";
+            obj_creer.prenom = "Eric";
+            obj_creer.ville = "Paris";
+            obj_creer.age = "27";
 
-            // boolean
-            var a = true, b = false;
+            var moi = {
+                prenom : "Eric",
+                ville : "Paris",
+                age : 27,
+                //fonction anonymes
+                id : function(){
+                    return this.prenom + " " + this.age;
+                }
+            }
 
-            var n = null;
-            var u = undefined;
+            function Identite(p , v , a) {
+                this.prenom = p;
+                this.ville = v;
+                this.age = a;
+            }
 
-            // not a number
-            var nn = NaN;
-
-            x = "quatre";
-
-            alert("Variable x :" + typeof(x) +
-                "\nVariable y :" + typeof(y) +
-                "\nVariable a :" + typeof(a) +
-                "\nVariable n :" + typeof(n) +
-                "\nVariable u :" + typeof(u) +
-                "\nVariable nn :" + typeof(nn));
+            var Eric = new Identite("Eric", "Paris", 27);
+            var Victor = new Identite("Victor", "Puteaux", 30);
 
         </script>
         <script src="script.js"></script>
