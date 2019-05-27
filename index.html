@@ -5,33 +5,34 @@
         <meta charset="utf-8">
     </head>
     <body>
-        <h1>Chapitre 21 : Objets </h1>
+        <h1>Chapitre 22 : Méthodes de l'objets String </h1>
         <script>
-            var obj_string = new String("Je suis un objet");
-            var obj_creer = new Object();
+            var texte = "J'apprends le javascript ";
 
-            obj_creer.prenom = "Eric";
-            obj_creer.ville = "Paris";
-            obj_creer.age = "27";
+            var texteMin = texte.toLowerCase();
+            var texteMax = texte.toUpperCase();
+            //alert(texte + '\n' + texteMin + '\n' + texteMax);
 
-            var moi = {
-                prenom : "Eric",
-                ville : "Paris",
-                age : 27,
-                //fonction anonymes
-                id : function(){
-                    return this.prenom + " " + this.age;
-                }
-            }
 
-            function Identite(p , v , a) {
-                this.prenom = p;
-                this.ville = v;
-                this.age = a;
-            }
+            var pos0 = texte.charAt(0);
+            var pos3 = texte.charAt(3);
+            var pose11 = texte.charAt(11);
+            //alert(pos0 + pos3 + pose11);
 
-            var Eric = new Identite("Eric", "Paris", 27);
-            var Victor = new Identite("Victor", "Puteaux", 30);
+
+            var premiere = texte.indexOf('p');
+            var derniere = texte.lastIndexOf('p');
+            var sequence = texte.indexOf('le');
+            //alert(premiere +'\n'+ derniere +'\n'+ sequence);
+
+
+            //alert(texte.replace("javascript", "php"));
+
+
+            //Extraire une partie d'une chaine et retourne la partie extraite comme nouvelle chaîne
+            alert(texte.slice(0,10));
+
+            var trim = trim(texte);
 
         </script>
         <script src="script.js"></script>
