@@ -5,16 +5,14 @@
         <meta charset="utf-8">
     </head>
     <body>
-        <h1>Chapitre 30 : La portée en JavaScript </h1>
+        <h1>Chapitre 31 : Les fonctions anonymes </h1>
         <script>
-          function locale(){
-			x = 5;
-			alert(x)			
-		  }
+			var carre = function (x) {
+				alert('Carré de ' + x +' = ' + x*x);
+			};
 			
-			locale();
-			
-			alert(x);
+			var y = prompt('Entrez un nombre');
+			carre(y);
         </script>
         <script src="script.js"></script>
     </body>
