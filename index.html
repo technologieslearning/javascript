@@ -1,50 +1,18 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Formation javascript</title>
+        <title>30 : la portée en javasript </title>
         <meta charset="utf-8">
     </head>
     <body>
-        <h1>Chapitre 23 : Méthodes de l'objets Number </h1>
+        <h1>Chapitre 24 : Methode objet array </h1>
         <script>
-            var min = Number.MIN_VALUE;
-            var max = Number.MAX_VALUE;
-            var infneg = Number.NEGATIVE_INFINITY;
-            var infpos = Number.POSITIVE_INFINITY;
-            var notnumber = Number.NaN;
-
-            alert(min + '\n' + max + '\n' + infneg + '\n' + infpos + '\n' + notnumber);
-
-            // Changer un nombre en une chaine de caractère
-            var x = 10;
-            var t = x.toString();
-            alert(typeof(x) + typeof(t));
-
-            // Fixer le nombre de décimale, et change le type en une chaine de caractère
-            var x = 10.4535;
-            var d = x.toFixed(2);
-
-            // Fixe le nombre de caractère et fais l'arrondi, et change le type en une chaine de caractère
-            var d = x.toPrecision(3);
-
-            // en argumant le nombre de décimal souhaité et l'écrit au format exponentiel
-            var d = x.toExponential(3);
-
-            // convertir au format nombre
-
-            var t = true;
-            var f = false;
-            var d = new Date();
-
-            // converti la date en timestamp
-            alert(Number(t) + '\n' + Number(f) + '\n' + Number(d) );
-
-            var x = "10.5562";
-            var int = parseInt(x);
-            var dec = parseFloat(x);
-
-            alert(int + '\n' + typeof(int) + '\n' + dec + '\n' + typeof(dec));
-
+          function locale(){
+			var x = 5;
+			alert(x)			
+		  }
+			
+			locale();
         </script>
         <script src="script.js"></script>
     </body>
